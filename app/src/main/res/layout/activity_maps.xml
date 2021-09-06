@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crd_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="-4dp"
+        map:cardCornerRadius="20dp"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Life's A Beach"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/img_pic"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/sampleimg"
+                android:layout_weight="0.8"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:minHeight="150dp"
+                android:layout_weight="1.2">
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/black"
+                    android:text="A Flood of Fun Baby Yourself The Bare/Bear Essentials The Bare/Bear Necessities (streaking, bare bottom) Bubbles bubbles everywhere Bubble Trouble Clean as a whistle Good Clean Fun Kiss my dirty face (suppose to mean Oh my goodness)"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Walk the loop</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="nav_map">Route</string>
+    <string name="nav_events">Events</string>
+    <string name="nav_about_us">About us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="nav_share">Share</string>
+</resources>
